@@ -1,37 +1,54 @@
-## Welcome to GitHub Pages
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>My Shoe</title>
 
-You can use the [editor on GitHub](https://github.com/dangnguyenminh/hello/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="keywords" content="My Shoe" />
+		<meta name="description" content="My Shoe" />
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+		<link rel="stylesheet" type="text/css" href="libs/bootstrap/dist/css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="libs/bootstrap/dist/css/bootstrap-theme.min.css" />	
+		<!-- <link rel="less" type="less"  href="libs/bootstrap/less/bootstrap.less" /> -->
+		<!-- <link rel="stylesheet/less" type="text/css" href="abc.less" /> -->
+		<link rel="stylesheet/less" type="text/css" href="assets/css/myCss.css" />
 
-### Markdown
+		
+		<script type="text/javascript" src="libs/jquery/dist/jquery.min.js"></script>
+		<script type="text/javascript" src="libs/bootstrap/dist/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="libs/angular/angular.min.js"></script>
+		<script type="text/javascript" src="libs/less/dist/less.min.js"></script>
+		
+		<script type="text/javascript" src="app.js"></script>
+	</head>
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+	<body ng-app="myApp" ng-controller="containerCtrl">
+		<div class="container-fluid" >
+			<!--pageHeader-->
+		    <div id="headerContainer" class="row">
+		    	<div ng-include="'app/components/header/header.html'"></div>
+		    </div>
 
-```markdown
-Syntax highlighted code block
+		    <!-- Menu-->
+		    <div id="menuContainer" class="row">
+		    	<div ng-include="'app/components/menu/menu.html'"></div>
+		    </div>
 
-# Header 1
-## Header 2
-### Header 3
+		    <!-- MainContainer -->
+		    <div id="mainContainer" class="row">
+		        <div id="leftCol" class="col-xs-12 col-sm-2">
+		         Left
+		        </div>		       
+		        <div id="rightCol" class="col-xs-12 col-sm-10">
+		        	Right
+		        </div>
+		    </div>
 
-- Bulleted
-- List
+		    <!-- pageFooter -->
+		    <div id="footerContainer" class="row">  
+		       <div ng-include="'app/components/footer/footer.html'"></div>
+		    </div>
 
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/dangnguyenminh/hello/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+		</div>
+	</body>
+</html>
