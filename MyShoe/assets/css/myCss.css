@@ -41,3 +41,8 @@ body {
 	background-color: #DCDCDC;
 	margin: 0px;
 }
+
+.main-content{
+	width: 100%;
+    	max-width: 100%;
+}
