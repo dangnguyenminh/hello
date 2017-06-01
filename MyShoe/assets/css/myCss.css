@@ -2,7 +2,7 @@
 /*@backgroundColor:#efefef;*/
 @import "../../abc.less";
 @import "../../libs/bootstrap/less/bootstrap.less";
-@backgroundColor:red;
+@backgroundColor:#fff;
 body {
 	background-color: @backgroundColor;
 	margin: 0;
@@ -45,4 +45,8 @@ body {
 .main-content{
 	width: 100%;
     	max-width: 100%;
+}
+
+.page-header{
+	display: none;
 }
