@@ -1,0 +1,43 @@
+
+/*@backgroundColor:#efefef;*/
+@import "../../abc.less";
+@import "../../libs/bootstrap/less/bootstrap.less";
+@backgroundColor:red;
+body {
+	background-color: @backgroundColor;
+	margin: 0;
+	padding: 0;
+	border: none;
+	text-align: center;
+	font: normal 13px Verdana, sans-serif;
+	/*@media (min-width: @screen-lg) {
+		background-color: red;
+	};
+	@media (min-width: @screen-md) {
+		background-color: blue;
+	}
+	@media (max-width: @screen-sm) {
+		background-color: yellow;
+	}	
+	@media (max-width: @screen-xs) {
+		background-color: green;
+	}		*/	
+}
+
+/*Header*/
+#headerContainer .carousel-inner img {
+	width: 100%;
+	height: 200px;
+}
+
+#mainContainer {
+	min-height: 600px;
+}
+
+/*Footer*/
+#footerContainer h3{
+	height: 100px;
+	line-height: 4;
+	background-color: #DCDCDC;
+	margin: 0px;
+}
